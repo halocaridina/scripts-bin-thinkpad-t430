@@ -11,7 +11,7 @@
   `# Don't lock when there's audio playing` \
   --not-when-audio \
   `# Undim & lock at 10 min` \
-  --timer 30 \
+  --timer 600 \
     '/usr/local/bin/dimmer && /usr/local/bin/xsecurelock_optimized.sh' \
     '' \
   `# Finally, suspend an hour after screen lock` \
