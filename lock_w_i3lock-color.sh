@@ -16,7 +16,7 @@ FONT='Iosevka Term SS03,Iosevka Term SS03 Regular'
 
 /usr/bin/i3lock \
 -n -f -b -i /home/srsantos/.i3/wallpapers/dark-metal-grids/dark-metal-grid-8_1600x900.png \
---time-color=$TEXT --date-color=$TEXT --verif-color=$TEXT2 --wrong-color=$TEXT --modif-color=$TEXT \
+--time-color=$TEXT --date-color=$TEXT --verif-color=$TEXT2 --wrong-color=$TEXT2 --modif-color=$TEXT2 \
 --layout-color=$TEXT --clock --indicator --time-str="%H:%M:%S" --date-str="%A, %Y-%m-%d" \
 --verif-text="Verifying..." --wrong-text="Wrong!" --noinput-text="No Input" --lock-text="Locking..." --lockfailed-text="Lock Failed!" \
 --greeter-color=$TEXT --greeter-pos="800:640" --greeter-text="" --time-font=$FONT --date-font=$FONT \
