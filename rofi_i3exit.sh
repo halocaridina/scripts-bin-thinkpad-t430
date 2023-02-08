@@ -5,7 +5,7 @@ res=$(rofi -dmenu -lines 6 -columns 3 -u 2-5 -font "Roboto Mono Medium for Power
 if [[ $res = "LOCK SCREEN" ]]; then
     xset dpms force off
 fi
-if [[ $res = "LOGOUT TO TTY" ]]; then
+if [[ $res = "LOGOUT TO LIGHTDM" ]]; then
 		if [ "$(pidof i3)" ]; then
 			pkill -f xss-lock & pkill -f bash & pkill -f gpg-agent & rm -f /tmp/touchpad_toggled* /tmp/screen_lock_toggled_off.lock /tmp/openconnect_vpn.lock & i3-msg exit
 		  else
