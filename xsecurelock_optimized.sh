@@ -48,6 +48,8 @@ export XSECURELOCK_SAVER_DELAY_MS=500
 
 #Postlock.....
 
+###/usr/bin/systemctl --user restart gpg-agent.socket gpg-agent-extra.socket gpg-agent-ssh.socket
+
 /usr/bin/yubikey-touch-detector --libnotify &
 
 /usr/bin/killall -SIGUSR2 dunst
