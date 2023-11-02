@@ -9,7 +9,7 @@
 
 /usr/bin/gpgconf --kill gpg-agent
 
-/usr/bin/pkill -9 yubikey-touch-detector
+/usr/bin/killall -SIGUSR1 yubikey-touch-detector
 
 ####################################################################
 # Lock.....
@@ -48,9 +48,9 @@ export XSECURELOCK_SAVER_DELAY_MS=500
 
 #Postlock.....
 
-###/usr/bin/systemctl --user restart gpg-agent.socket gpg-agent-extra.socket gpg-agent-ssh.socket
+/usr/bin/systemctl --user restart gpg-agent.socket gpg-agent-extra.socket gpg-agent-ssh.socket
 
-/usr/bin/yubikey-touch-detector --libnotify &
+/usr/bin/killall -SIGUSR2 yubikey-touch-detector
 
 /usr/bin/killall -SIGUSR2 dunst
 
